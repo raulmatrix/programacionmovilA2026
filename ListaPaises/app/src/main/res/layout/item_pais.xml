@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgBandera"
+        android:layout_width="163dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bolivia" />
+
+    <TextView
+        android:id="@+id/txtNombrePais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOMBRE PAIS"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imgBandera"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/txtCapital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CAPITAL"
+        app:layout_constraintStart_toEndOf="@+id/imgBandera"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <TextView
+        android:id="@+id/txtHabitantes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HABITANTES"
+        app:layout_constraintStart_toEndOf="@+id/imgBandera"
+        tools:layout_editor_absoluteY="59dp" />
+
+    <TextView
+        android:id="@+id/txtContinente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONTINENTE"
+        app:layout_constraintStart_toEndOf="@+id/imgBandera"
+        tools:layout_editor_absoluteY="78dp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="146dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
